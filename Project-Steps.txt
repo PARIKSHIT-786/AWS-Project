@@ -1,0 +1,22 @@
+1. Create EC2 Instance
+2. Configure Security Groups (Allow SSH, HTTP, MySQL/Aurora)
+3. Connect to EC2 using PuTTY
+4. Update system & install Apache2:
+   - sudo apt-get update
+   - sudo apt-get install apache2 -y
+5. Install PHP and MySQL client:
+   - sudo add-apt-repository -y ppa:ondrej/php
+   - sudo apt install php5.6 mysql-client php5.6-mysqli
+6. Verify Apache2 and PHP setup
+7. Access web server using EC2 Public IP
+8. Configure Amazon RDS (MySQL):
+   - Public access enabled
+   - Setup database and tables via MySQL client
+9. Deploy website files to EC2 using FileZilla
+10. Create AMI from EC2 instance
+11. Set up Launch Template with AMI
+12. Configure Auto Scaling Group
+13. Set up Application Load Balancer (Internet Facing)
+14. Configure Route 53:
+   - Add record to map domain name to Load Balancer
+15. Verify website accessibility using domain name
